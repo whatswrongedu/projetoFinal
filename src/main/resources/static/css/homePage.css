@@ -59,6 +59,17 @@
     background-color: #333;
 }
 
+/* Borda elegante no final da navbar */
+.custom-navbar::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    right: 100px;
+    height: 0.10px;
+    background-color: #666666;
+}
 /* ___________________________________________________________________________________________________________ */
 
 body {

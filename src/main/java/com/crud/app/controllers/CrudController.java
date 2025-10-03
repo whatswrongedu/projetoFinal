@@ -33,6 +33,51 @@ public class CrudController {
         return "home";
     }
 
+    @RequestMapping("/nfr")
+    public String nfr() {
+        return "nfr";
+    }
+
+    @RequestMapping("/lfl")
+    public String lfl() {
+        return "lfl";
+    }
+
+    @RequestMapping("/bb")
+    public String bb() {
+        return "bb";
+    }
+
+    @RequestMapping("/coc")
+    public String coc() {
+        return "coc";
+    }
+
+    @RequestMapping("/hm")
+    public String hm() {
+        return "hm";
+    }
+
+    @RequestMapping("/ultraviolence")
+    public String ultraviolence() {
+        return "ultraviolence";
+    }
+
+    @RequestMapping("/btd")
+    public String btd() {
+        return "btd";
+    }
+
+    @RequestMapping("/paradise")
+    public String paradise() {
+        return "paradise";
+    }
+
+    @RequestMapping("/oceanblvd")
+    public String oceanblvd() {
+        return "oceanblvd";
+    }
+
 
     @RequestMapping(value="/cadastrar", method=RequestMethod.POST)
     public String cadastrar(Pessoa usuario) {
@@ -65,18 +110,12 @@ public class CrudController {
     }
 
     // excluir
-    @RequestMapping("/confirmarExclusao/{idPessoa}")
-    public ModelAndView confirmarExclusao(@PathVariable("idPessoa") long idPessoa) {
-        Pessoa usuario = csr.findByIdPessoa(idPessoa);
-        ModelAndView mv = new ModelAndView("excluirUsuario");
-        mv.addObject("usuario", usuario);
-        return mv;
-    }
-
-    @RequestMapping("/excluirUsuario")
-    public String excluirUsuario(long idPessoa) {
-        Pessoa usuario = csr.findByIdPessoa(idPessoa);
+@RequestMapping(value = "/excluirUsuario/{idPessoa}", method = RequestMethod.GET)
+public String excluirUsuario(@PathVariable("idPessoa") long idPessoa) {
+    Pessoa usuario = csr.findByIdPessoa(idPessoa);
+    if (usuario != null) {
         csr.delete(usuario);
-        return "redirect:/listarUsuarios";
     }
+    return "redirect:/listarUsuarios";
+}
 }

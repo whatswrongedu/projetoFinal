@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ultraviolence</title>
     <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" />
-    <link rel="stylesheet" href="css/homePage.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/listar.css">
 </head>
 
 <body>
@@ -27,12 +27,8 @@
     </nav>
     <!-- fim do navbar -->
 
-    <!-- container -->
-    <div class="container">
-        <h1>Lista de usuários</h1>
-        <hr class="mb-5">
-
-        <!-- listar usuários -->
+    <!-- listar usuários -->
+    <div class="listar">
         <div th:each="usuario : ${usuarios}">
             <div class="row">
                 <div class="col-12 col-md-2 col-lg-1 celula">
@@ -57,8 +53,8 @@
                 <!-- botão excluir -->
                 <div class="col-6 col-md-2 col-lg-1 botao-celula">
                     <div>
-                        <a class="btn btn-danger" role="button"
-                            th:href="@{'/confirmarExclusao/' + ${usuario.idPessoa}}">Excluir</a>
+                        <a class="btn btn-danger" role="button" th:href="@{'/excluirUsuario/' + ${usuario.idPessoa}}"
+                            onclick="return confirm('Tem certeza que deseja excluir este usuário?');">Excluir</a>
                     </div>
                 </div>
             </div>
