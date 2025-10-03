@@ -1,0 +1,74 @@
+/* fonte Montserrat do Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+/* Navbar fixa e estilo principal */
+.custom-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.navbar img {
+    width: 200px;
+}
+
+/* Container interno da navbar */
+.navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.custom-navbar .navbar-brand img {
+    width: 200px;
+}
+
+/* Links */
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar-links .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.navbar-links .nav-link:hover {
+    background-color: #333;
+}
+
+/* Borda elegante no final da navbar */
+.custom-navbar::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    right: 100px;
+    height: 0.10px;
+    background-color: #666666;
+}
+
+/* ___________________________________________________________________________________________________________ */

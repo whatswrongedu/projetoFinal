@@ -1,0 +1,174 @@
+/* fonte Montserrat do Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+/* Navbar fixa e estilo principal */
+.custom-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.navbar img {
+    width: 200px;
+}
+
+/* Container interno da navbar */
+.navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.custom-navbar .navbar-brand img {
+    width: 200px;
+}
+
+/* Links */
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar-links .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.navbar-links .nav-link:hover {
+    background-color: #333;
+}
+
+/* Borda elegante no final da navbar */
+.custom-navbar::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    right: 100px;
+    height: 0.10px;
+    background-color: #666666;
+}
+
+/* ___________________________________________________________________________________________________________ */
+
+body{
+    background-color: black;
+    font-weight: bolder;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 150px;
+    padding-top: 100px;
+}
+
+.lanaGifs{
+    width: 100%;
+    padding: 5px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px
+}
+
+.navigation img{
+    width: 100%;
+    max-width: 400px;
+    justify-content: end;
+}
+
+.button:hover{
+    color: black;
+    background: white;
+}
+
+.navigation{
+    z-index: 8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+/* fornulário */
+
+.navigation, .form{
+    text-align: left;
+}
+
+h2{
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.form, .form-group{
+    margin-bottom: 1.25rem;
+}
+
+.form label{
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ccc;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.form input{
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: 1.5px solid #696969;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    line-height: normal;
+}
+
+.form input:focus{
+    outline: none;
+    border-color: #808080;
+    box-shadow: 0 0 5px rgba(128, 128, 128, 0.5);
+}
+
+.form button{
+    width: 100%;
+    padding: 0.85rem 1.25rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+a{
+    color: white;
+    justify-content: center;
+}
+

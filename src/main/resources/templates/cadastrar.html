@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastrar usuário</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- css externo -->
+    <link href="css/registerLogin.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="custom-navbar">
+        <div class="navbar-container">
+            <a class="navbar-brand" href="/">
+                <img src="https://www.dafont.com/forum/attach/orig/3/8/388253.jpg" alt="Ícone">
+            </a>
+            <div class="navbar-links">
+                <a class="nav-link" href="/home">Catálogo</a>
+                <a class="nav-link" href="/cadastrar">Cadastre-se</a>
+                <a class="nav-link" href="/listarUsuarios">Clientes</a>
+            </div>
+        </div>
+    </nav>
+    <!-- fim do navbar -->
+        <!-- row -->
+        <main>
+        <div class="navigation">
+            <div class="lanaGifs">
+                <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExamh3cGtidmt2cmM4aDVkbDhpaXc1eGZlYXJ1N2Y1bnVpbHhrM3BvMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3osBLqF9kpJdlZm8vu/giphy.gif" alt="spinning around">
+                <br>
+                <img src="https://i.pinimg.com/originals/e4/6b/ab/e46babfcb7ac9f6da87bf9b10a548618.gif" alt="trees in WC clip">
+                <br>
+                <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdG82YnVqNDY5YWgybXcxNjcydmczdWFuaTZrNGJ0OTlwd3N3NzBmaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3osBLfiraFFV6QHY8U/giphy.gif" alt="lana with her lover">
+                <br><br>
+            <a href="login.html">Já tem cadastro? Faça o login.</a>
+            </div>
+
+            <div class="form">
+                <h2>Crie seu cadastro</h2>
+                <form method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pais">CPF:</label>
+                        <input type="number" id="cpf" name="cpf" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+                    <button type="submit" class="button">Criar Conta</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    </div>
+    <!-- fim do container -->
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

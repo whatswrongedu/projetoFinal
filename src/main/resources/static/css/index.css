@@ -1,0 +1,162 @@
+/* fonte Montserrat do Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+/* Navbar fixa e estilo principal */
+.custom-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Container interno da navbar */
+.navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.custom-navbar .navbar-brand img {
+    width: 200px;
+}
+
+/* Links */
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar-links .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.navbar-links .nav-link:hover {
+    background-color: #333;
+}
+
+
+
+.welcome{
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-image: url('https://i.ebayimg.com/images/g/WOgAAOSwGdFgu3i-/s-l1200.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.logo{
+    width: 100%;
+    min-height: 60vh;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('https://www.dafont.com/forum/attach/orig/3/8/388253.jpg');
+}
+
+.card{
+    color: white;
+}
+
+.jacare{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url('https://giffiles.alphacoders.com/951/9518.gif');
+}
+
+.center{
+    display: flex;
+    max-width: 320px;
+    background-color: rgba(108, 108, 108, 0.288);
+    flex-direction: column;
+    align-items: center;
+    border-radius: .5em;
+    text-align: center;
+}
+
+.card a{
+    background-color: rgba(0, 0, 0, 0.729);
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.btd{
+    width: 90%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    border-radius: .3em;
+    background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmJncGE5YWhqZzEwdTVncDlmZ2c4ejlwOXJraHk2Z3ZuN2x3bWp4MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wC4zuiwjuaHFS/giphy.gif');
+}
+
+.second {
+    flex-direction: row;
+    gap: 1.6em;
+    background-attachment: fixed;
+    height: 1200px;
+}
+
+p {
+    max-width: 52ch;
+    line-height: 1.5;
+    padding: 1em;
+    text-align: justify;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-top: 1em;
+}
+/* ___________________________________________________________________________________________________________ */
+
+footer{
+    width: 100%;
+    min-height: 60vh;
+    background-color: black
+}
+
+.links{
+    color: white;
+}
+
+a{
+    display: inline-block;
+    padding: 1em 3.5em;
+    color: white;
+    text-decoration: none;
+    letter-spacing: .5px;
+    font-size: .875rem;
+    font-weight: bold;
+    letter-spacing: .5px;
+}
