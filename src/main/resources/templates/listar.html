@@ -28,7 +28,7 @@
     <!-- fim do navbar -->
 
     <!-- listar usuários -->
-    <div class="listar">
+    <div class="listar text-light bg-dark p-3">
         <div th:each="usuario : ${usuarios}">
             <div class="row">
                 <div class="col-12 col-md-2 col-lg-1 celula">
@@ -43,14 +43,12 @@
                 <div class="col-12 col-md-6 col-lg-3 celula">
                     <b>E-mail: </b><span th:text="${usuario.email}"></span>
                 </div>
-                <!-- botão alterar -->
                 <div class="col-6 col-md-3 col-lg-1 botao-celula">
                     <div>
                         <a class="btn btn-warning" role="button"
                             th:href="@{'/alterarUsuario/' + ${usuario.idPessoa}}">Alterar</a>
                     </div>
                 </div>
-                <!-- botão excluir -->
                 <div class="col-6 col-md-2 col-lg-1 botao-celula">
                     <div>
                         <a class="btn btn-danger" role="button" th:href="@{'/excluirUsuario/' + ${usuario.idPessoa}}"
